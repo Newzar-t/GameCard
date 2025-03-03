@@ -1,0 +1,241 @@
+
+    {
+        name: "Patoche",
+        picture: "images/NbZCjDEsva91FW1W.jpg",
+        years: 48,
+        single: false,
+        anecdotes: [
+            {
+                favoritefood: "Aime le Ricard à 14h",
+                favoritething: "S'est déjà retrouvé ivre pendant 48h",
+                bodycount: 0,
+            },
+        ],
+        ist: ["Syphilis", "Chlamydia", "Trichomonase"],
+    },
+    {
+        name: "Brad",
+        picture: "images/1736752517-fj5cplp.webp",
+        years: 35,
+        single: true,
+        anecdotes: [
+            {
+                favoritefood: "Aime le pigeon farci",
+                favoritething: "Arnaque des vieilles sur internet",
+                bodycount: 256,
+            },
+        ],
+        ist: ["VIH", "Herpès génital", "Gonorrhée"],
+    },
+    {
+        name: "Balthazar",
+        picture: "images/Balthazar.webp",
+        years: 28,
+        single: true,
+        anecdotes: [
+            {
+                favoritefood: "Aime les flageolets",
+                favoritething: "Collectionne les cassettes porn de 1970",
+                bodycount: 890,
+            },
+        ],
+        ist: ["HPV", "Hépatite C", "Chlamydia"],
+    },
+    {
+        name: "Sam",
+        picture: "images/HPKHD2ZVANE4ZLZOVOG44CI5JI.avif",
+        years: 21,
+        single: false,
+        anecdotes: [
+            {
+                favoritefood: "Aime les pilules de créatine",
+                favoritething: "Fan de bodybuilding et de seringues",
+                bodycount: 10,
+            },
+        ],
+        ist: ["Hépatite B", "Gonorrhée", "Herpès génital"],
+    },
+    {
+        name: "Tristan",
+        picture: "images/interview.-ses-debuts-tele-realite-carriere-mannequin-max-couples-parfaits-confie.png",
+        years: 21,
+        single: true,
+        anecdotes: [
+            {
+                favoritefood: "Aime les pâtes au pesto",
+                favoritething: "A déjà couru 200m",
+                bodycount: 4,
+            },
+        ],
+        ist: ["Syphilis", "VIH", "Trichomonase"],
+    },
+    {
+        name: "Julien",
+        picture: "images/homme-7.jpg",
+        years: 29,
+        single: true,
+        anecdotes: [
+            {
+                favoritefood: "Aime le curry de poulet",
+                favoritething: "Fan de Sylvain Durif Prime",
+                bodycount: 7,
+            },
+        ],
+        ist: ["Herpès génital", "Chlamydia", "HPV"],
+    },
+    {
+        name: "Oussamma",
+        picture: "images/homme-8.jpg",
+        years: 27,
+        single: false,
+        anecdotes: [
+            {
+                favoritefood: "Aime les buffets à volonté",
+                favoritething: "A déjà coulé un restaurant chinois",
+                bodycount: 1,
+            },
+        ],
+        ist: ["Hépatite C", "VIH", "Gonorrhée"],
+    },
+    {
+        name: "Gaspard",
+        picture: "images/Gaspard.webp",
+        years: 17,
+        single: true,
+        anecdotes: [
+            {
+                favoritefood: "Aime les poireaux",
+                favoritething: "Fan des fromages de Savoie",
+                bodycount: 3,
+            },
+        ],
+        ist: ["Trichomonase", "Chlamydia", "HPV"],
+    },
+    {
+        name: "Samir",
+        picture: "images/homme-6.jpg",
+        years: 29,
+        single: true,
+        anecdotes: [
+            {
+                favoritefood: "Aime les petits pois",
+                favoritething: "A fait livreur Uber Eats au Kazakhstan",
+                bodycount: 6,
+            },
+        ],
+        ist: ["Herpès génital", "Syphilis", "VIH"],
+    },
+    {
+        name: "Anis",
+        picture: "images/homme-7.jpg",
+        years: 26,
+        single: false,
+        anecdotes: [
+            {
+                favoritefood: "Aime les granola",
+                favoritething: "A été banni d'un fast-food mexicain",
+                bodycount: 72,
+            },
+        ],
+        ist: ["Hépatite B", "Chlamydia", "Trichomonase"],
+    },
+    {
+        name: "Nadir",
+        picture: "images/homme-8.jpg",
+        years: 23,
+        single: true,
+        anecdotes: [
+            {
+                favoritefood: "Aime le tofu vapeur",
+                favoritething: "A une phobie inexplicable des pigeons",
+                bodycount: 3,
+            },
+        ],
+        ist: ["Gonorrhée", "Herpès génital", "VIH"],
+    },
+    {
+        name: "Youssef",
+        picture: "images/homme-9.jpg",
+        years: 31,
+        single: true,
+        anecdotes: [
+            {
+                favoritefood: "Aime les kebabs végé",
+                favoritething: "A déjà menti sur son test de pureté",
+                bodycount: 16,
+            },
+        ],
+        ist: ["Syphilis", "HPV", "Hépatite B"],
+    },
+    {
+        name: "Marc",
+        picture: "images/homme-10.jpg",
+        years: 28,
+        single: false,
+        anecdotes: [
+            {
+                favoritefood: "Aime Marc ",
+                favoritething: "Fan de Marc et de bananes",
+                bodycount: 29,
+            },
+        ],
+        ist: ["Chlamydia", "Herpès génital", "Hépatite C"],
+    },
+
+
+
+
+    let cardInfo = document.createElement("div");
+    cardInfo.classList.add("CardInfo");
+
+    let imgStatut = document.createElement("img");
+
+    if(element.single == true){
+        imgStatut.src = ImageCelib
+    }
+    else if(element.single === false){
+        imgStatut.src = ImageCouple
+    }
+
+    cardInfo.appendChild(imgStatut)
+
+    let cardAnecdotes = document.createElement("ol");
+
+    let i = 0
+
+    for(i = 0; i< element.anecdotes.length ; i+=1)
+    {
+
+        let anecdote1 = document.createElement("li")
+         anecdote1.innerHTML = element.anecdotes[i].favoritefood;
+
+         let anecdote2 = document.createElement("li")
+         anecdote2.innerHTML = element.anecdotes[i].favoritething;
+
+         let anecdote3 = document.createElement("li")
+         anecdote3.innerHTML = "Bodycount : " + element.anecdotes[i].bodycount ;
+
+         cardAnecdotes.appendChild(anecdote1)
+         cardAnecdotes.appendChild(anecdote2)
+         cardAnecdotes.appendChild(anecdote3)
+    }
+
+    let cardImgVirus = document.createElement("img");
+    cardImgVirus.src = ImageVirus;
+
+    let cardListVirus = document.createElement("ul");
+
+    let m = 0
+
+    for(m = 0; m<element.ist.length; m++)
+    {
+      let maladie1 = document.createElement("li")
+      maladie1.innerText = element.ist[m]
+
+      cardListVirus.appendChild(maladie1)
+    }
+
+    cardInfo.appendChild(cardAnecdotes) ;
+    cardInfo.appendChild(cardImgVirus);
+    cardInfo.appendChild(cardListVirus);
+    newCard.appendChild(cardInfo);
